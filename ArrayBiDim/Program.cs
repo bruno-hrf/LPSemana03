@@ -15,13 +15,14 @@ namespace ArrayBiDim
             int colunasInt = int.Parse(colunas);
 
             float [,] matrix = new float [linhasInt, colunasInt];
-
+            float somaMedias = 0;
+            
             for(int i=0 ; i<matrix.GetLength(0); i++)
             {
 
                 float somaLinha= 0;
                 float mediaLinha;
-
+                
 
                 for(int j=0 ; j<matrix.GetLength(1); j++)
                 {
@@ -34,11 +35,11 @@ namespace ArrayBiDim
                 }   
 
                 mediaLinha = somaLinha / matrix.GetLength(1);
-
+                somaMedias += mediaLinha;
                 Console.WriteLine($"A media desta linha é :{mediaLinha}");                 
             }
 
-
+            Console.WriteLine($"A media das somas é: {somaMedias}");
 
 
 
