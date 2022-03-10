@@ -6,7 +6,15 @@ namespace NPCPerks
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
+            string numeroNPCstring;
+
+            Console.WriteLine("Quantos NPCs existem: ");
+            Console.ReadLine(numeroNPC);
+
+            int numeroNPCint = int.Parse(numeroNPCstring);
+
+
         }
     }
 }
